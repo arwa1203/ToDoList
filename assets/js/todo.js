@@ -9,10 +9,10 @@ inputEnter();
 /*Functions*/
 
 function addDelete(){
+
 	$("ul").on("click", ".delete",function(e){
 
 		// fade and delete element
-		
 		$(this).parent().fadeOut(500, function(){
 			$(this).remove();
 		});
@@ -20,6 +20,8 @@ function addDelete(){
 	});
 
 }
+
+
 
 function checkOff(){
 	$("ul").on("click", "li", function(){
@@ -44,8 +46,9 @@ function inputEnter(){
 }
 
 function makeLiLine(task){
+	var icon = "<i class=\"fas fa-minus-circle\"></i>";
 	console.log(task);
-	var str = "<li><span class=\"delete\">X</span>" + task + "</li>";
+	var str = "<li><span class=\"delete\">" + icon + "</span>" + task + "</li>";
 	return str;
 
 
