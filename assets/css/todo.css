@@ -1,0 +1,24 @@
+div{
+	margin: 0 auto;
+	background-color: rgba(240, 240, 240, 0.8);
+	width: 360px;
+
+}
+
+h1{
+	background-color: steelblue;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+.delete{
+	padding: 5px;
+}
+
+.completed{
+	color: rgba(10, 10, 10, 0.4);
+	text-decoration: line-through;
+}
